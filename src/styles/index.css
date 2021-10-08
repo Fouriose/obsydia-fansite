@@ -10,8 +10,6 @@ body{
   overflow: hidden;
 }
 
-
-
 .main-container{
   position: absolute;
   top: 0;
@@ -96,14 +94,12 @@ body{
   height: 450px;
   width: 450px;
   cursor: pointer;
-  z-index: 99;
+  z-index: 3;
 } 
 
-/* .main-logo:hover{
-  transition: ease-in-out .2s;
-  transform: scale(1.1);
-} */
-
+.main-logo__active{
+  pointer-events: none !important;
+}
 
 .arrow-left, .arrow-right{
   transform: rotateY(180deg);
@@ -169,10 +165,9 @@ body{
   background-color: #FEB043;
 }
 
-.char-box:nth-child(2):hover div .char-tooltip{
-  left: -41%;
+.char-box-petra__active{
+  left: -41% !important; 
 }
-
 
 /* Selen */
 .char-box:nth-child(3) div img{ 
@@ -192,9 +187,9 @@ body{
   background-color: #A78FF2;
 }
 
-.char-box:nth-child(3):hover div .char-tooltip{
-  top: -25px;
-  left: -100px;
+.char-box-selen__active{
+  top: -25px !important;
+  left: -100px !important;
 }
 
 .char-box:nth-child(3) div .char-tooltip h1{
@@ -215,8 +210,8 @@ body{
   background-color: #F0BCC9;
 }
 
-.char-box:nth-child(4):hover div .char-tooltip{
-  top: 0;
+.char-box-rosemi__active{
+  top: 0 !important;
 }
 
 

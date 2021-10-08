@@ -19,10 +19,10 @@ function MainLogo(props){
         <img src={logo} alt='logo'
         className='main-logo'
         id={menuIsActive ? 'logo__active' : undefined} 
-        // onMouseEnter={arrowsOut}
-        // onMouseLeave={arrowsIn}
-        onClick={() => {if(menuIsActive === false) setMenuIsActive(true)}}
-
+        onClick={(e) => {if(menuIsActive === false) {
+            setMenuIsActive(true)
+            e.target.classList.add('main-logo__active')
+        }}}
         ></img>
         <img src={arrowRight} id={menuIsActive ? 'arrow-right__active' : undefined} alt='logo' className='arrow-right'></img>
         </>
