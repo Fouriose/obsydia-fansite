@@ -1,0 +1,368 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body{
+  overflow: hidden;
+}
+
+
+
+.main-container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  max-width: 100vw;
+  min-height: 100vh;
+  max-height: 100vh;
+  z-index: -99;
+}
+
+/*! Background section */
+
+.bg-image{
+  position: absolute;
+  top: -25%;
+  left: -25%;
+  width: 150%;
+  height: 150%;
+  min-width: 100%;
+  min-height: 100%;
+  background: url(/src/media/black-texture.jpg);
+  filter: blur(20px);
+}
+
+.bg-char-container{
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 100vw;
+  max-width: 100vw;
+  min-height: 100vh;
+  max-height: 100vh;
+}
+
+.bg-char{
+  max-height: 90vh;
+  filter: grayscale() blur(8px);
+  opacity: .2;
+  transition: .4s ease-in-out;
+}
+
+.bg-char:nth-child(1){
+  padding-left: 20px;
+}
+
+.bg-char:nth-child(2){
+  margin-left: -20px;
+}
+
+.bg-char:nth-child(3){
+  padding-right: 70px;
+}
+
+.bg-char__active{
+  filter: none;
+  opacity: .7;
+}
+
+.bg-char:nth-child(1){
+  margin-left: 20px;
+}
+.bg-char:nth-child(3){
+  margin-right: 20px;
+}
+
+/*! Main Section */
+
+
+.main-menu-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.main-logo{
+  height: 450px;
+  width: 450px;
+  cursor: pointer;
+  z-index: 99;
+} 
+
+/* .main-logo:hover{
+  transition: ease-in-out .2s;
+  transform: scale(1.1);
+} */
+
+
+.arrow-left, .arrow-right{
+  transform: rotateY(180deg);
+  transition: margin ease-in-out .3s,
+              transform linear .1s;
+}
+
+.arrow-left{
+  margin-right: 50px;
+}
+
+.arrow-right{
+  margin-left: 50px;
+}
+
+.char-box{
+  position: absolute;
+  opacity: 0;
+  width: 312px;
+  height: 312px;
+  border: 156px solid #c9c9c9;
+  transform: rotate(45deg);
+  z-index: 2;
+}
+
+.portrait-wrapper{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.char-tooltip{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 18px;
+  white-space: nowrap;
+  transition: all ease-in-out .2s;
+  z-index: 1;
+}
+
+
+/* Petra */
+.char-box:nth-child(2) div img{
+  display: block;
+  position: absolute;
+  top: -280px;
+  left: 150px;
+  transform: scale(0.9) rotate(-45deg)
+}
+
+.char-box:nth-child(2) div .char-tooltip{
+  transform: rotate(-90deg);
+  left: -62%;
+  top: 40%;
+  width: 102%;
+  background-color: #FEB043;
+}
+
+.char-box:nth-child(2):hover div .char-tooltip{
+  left: -41%;
+}
+
+
+/* Selen */
+.char-box:nth-child(3) div img{ 
+  display: block;
+  position: absolute;
+  top: -200px;
+  left: 250px;
+  transform: rotate(-45deg)
+}
+
+.char-box:nth-child(3) div .char-tooltip{
+  transform: rotate(-45deg);
+  top: -135px;
+  left: -210px;
+  height: 50%;
+  
+  background-color: #A78FF2;
+}
+
+.char-box:nth-child(3):hover div .char-tooltip{
+  top: -25px;
+  left: -100px;
+}
+
+.char-box:nth-child(3) div .char-tooltip h1{
+  align-self: flex-end;
+}
+
+/* Rosemi */
+.char-box:nth-child(4) div img{
+  display: block;
+  position: absolute;
+  top: -340px;
+  left: 275px;
+  transform: scale(0.9) rotate(-45deg);
+}
+
+.char-box:nth-child(4) div .char-tooltip{
+  top: -20%;
+  background-color: #F0BCC9;
+}
+
+.char-box:nth-child(4):hover div .char-tooltip{
+  top: 0;
+}
+
+
+#arrow-left__active{
+  animation: arrow-left-unfold 1.2s ease-in-out forwards;
+}
+
+#arrow-right__active{
+  animation: arrow-right-unfold 1.2s ease-in-out forwards;
+}
+
+#logo__active{
+  animation: logo-unfold .2s ease-in-out .2s forwards;
+}
+
+#char-box-1__active{
+  animation: unfold-1 .5s ease-in-out .5s forwards,
+    lightup-1 .5s linear 1.5s forwards;
+}
+
+#char-box-2__active{
+  animation: unfold-2 .5s ease-in-out .5s forwards,
+    lightup-2 .5s linear 2s forwards;
+}
+
+#char-box-3__active{
+  animation: unfold-3 .5s ease-in-out .5s forwards,
+    lightup-3 .5s linear 2.5s forwards;
+}
+
+
+
+/*!Keyframes*/
+
+@keyframes lightup-1 {
+
+  100%{
+    border: 4px solid #FEB043;
+  }
+}
+
+@keyframes lightup-2 {
+  100%{
+    border: 4px solid #A78FF2;
+  }
+}
+
+@keyframes lightup-3 {
+  100%{
+    border: 4px solid #F0BCC9;
+  }
+}
+
+@keyframes logo-unfold {
+  0%{
+  }
+
+  100%{
+    margin-top: -475px;
+  }
+}
+
+@keyframes arrow-left-unfold {
+  0%{
+
+  }
+
+  35%{
+    margin-right: 180px;
+    transform: rotateY(0deg);
+  }
+
+  75%{
+    margin-right: 180px;
+    transform: rotateY(0deg);
+  }
+
+  100%{
+    margin-right: 120px;
+    transform: rotateY(0deg);
+  }
+}
+
+@keyframes arrow-right-unfold {
+  35%{
+    margin-left: 180px;
+    transform: rotateY(0deg);
+  }
+
+  75%{
+    margin-left: 180px;
+    transform: rotateY(0deg);
+  }
+
+  100%{
+    margin-left: 120px;
+    transform: rotateY(0deg);
+  }
+}
+
+@keyframes unfold-1{
+  0%{
+    margin-top: -475px;
+  }
+
+  100%{
+    opacity: 1;
+    margin-left: -475px;
+    margin-top: 0px;
+  }
+}
+
+@keyframes unfold-2{
+  0%{
+    opacity: 0;
+    margin-top: -475px;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  100%{
+    opacity: 1;
+    margin-left: 0;
+    margin-bottom: -475px;
+  }
+}
+
+@keyframes unfold-3{
+  0%{
+    opacity: 0;
+    margin-top: -475px;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  100%{
+    opacity: 1;
+    margin-left: 475px;
+    margin-bottom: 0;
+  }
+}
+
+
+/*!TODO Refactor tooltip to work via event listener to fix hover bug on Petra and Rosemi */
+/*!TODO Refactor naming conventions to better suite the current state of the development */
+/*!TODO Implement some sort of hover animation for the Obsydia logo before opening the menu */
+/*? Maybe implement a redirect to nijisanji web-site on the Obsydia logo + some kind of way to let user know about it(tooltip or animation idk) */
+/*!TODO Implement transition animation to info page of each talent */
+/*!TODO Implement info pages for each talent */
