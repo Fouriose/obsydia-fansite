@@ -1,13 +1,10 @@
 import logo from '../media/Logo.svg'
 import CharacterBox from './CharacterBox';
-import testLogo from '../media/Obsydia_logo_transparent_cropped.png'
-import arrow from '../media/Arrow.svg'
 import arrowLeft from '../media/Arrow-left.svg'
 import arrowRight from '../media/Arrow-right.svg'
-import { useState, useRef } from 'react'
+import { useState } from 'react'
 
 function MainMenu(props){
-    const [arrowAnimState, setArrowAnimState] = useState(true)
     const [menuIsActive, setMenuIsActive] = useState(false)
 
     return(
