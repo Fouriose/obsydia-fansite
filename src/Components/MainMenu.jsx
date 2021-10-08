@@ -6,16 +6,26 @@ import arrowLeft from '../media/Arrow-left.svg'
 import arrowRight from '../media/Arrow-right.svg'
 import { useState, useRef } from 'react'
 
-function MainLogo(props){
+function MainMenu(props){
     const [arrowAnimState, setArrowAnimState] = useState(true)
     const [menuIsActive, setMenuIsActive] = useState(false)
 
     return(
         <>
         <img src={arrowLeft} id={menuIsActive ? 'arrowLeft__active' : undefined} alt='logo' className='arrowLeft'></img>
-        <CharacterBox id={menuIsActive ? 'characterBox-1__active' : undefined} char={props.petra}/>
-        <CharacterBox id={menuIsActive ? 'characterBox-2__active' : undefined} char={props.selen}/>
-        <CharacterBox id={menuIsActive ? 'characterBox-3__active' : undefined} char={props.rosemi}/>
+        <CharacterBox 
+            character={props.petra}
+            state={menuIsActive ? 'characterBox-1__active' : undefined}
+        />
+        <CharacterBox 
+            character={props.selen}
+            state={menuIsActive ? 'characterBox-2__active' : undefined}
+        />
+        <CharacterBox 
+            character={props.rosemi}
+            state={menuIsActive ? 'characterBox-3__active' : undefined}
+        />
+        
         <img src={logo} alt='logo'
         className='obsydiaLogo'
         id={menuIsActive ? 'logo__active' : undefined} 
@@ -29,4 +39,4 @@ function MainLogo(props){
     )
 }
 
-export default MainLogo
+export default MainMenu

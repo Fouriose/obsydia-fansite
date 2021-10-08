@@ -123,6 +123,8 @@ body{
   border: 156px solid #c9c9c9;
   transform: rotate(45deg);
   z-index: 2;
+  pointer-events: none;
+  cursor: pointer;
 }
 
 .portraitWrapper{
@@ -247,21 +249,32 @@ body{
 /*!Keyframes*/
 
 @keyframes lightup-1 {
-
+  99%{
+    pointer-events: none;
+  }
   100%{
     border: 4px solid #FEB043;
+    pointer-events: auto;
   }
 }
 
 @keyframes lightup-2 {
+  99%{
+    pointer-events: none;
+  }
   100%{
     border: 4px solid #A78FF2;
+    pointer-events: auto;
   }
 }
 
 @keyframes lightup-3 {
+  99%{
+    pointer-events: none;
+  }
   100%{
     border: 4px solid #F0BCC9;
+    pointer-events: auto;
   }
 }
 
@@ -357,7 +370,7 @@ body{
 
 /** Refactor tooltip to work via event listener to fix hover bug on Petra and Rosemi */ 
 /** Refactor naming conventions, mainly css*/
-/*TODO Refactor and optimize character data transfer and rendering*/
+/** Refactor and optimize character data transfer and rendering*/
 /*TODO Implement some sort of hover animation for the Obsydia logo before opening the menu */
 /*? Maybe implement a redirect to nijisanji web-site on the Obsydia logo + some kind of way to let user know about it(tooltip or animation idk) */
 /*TODO Implement transition animation to info page of each talent */
