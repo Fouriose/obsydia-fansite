@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/obsydia-fansite/static/css/main.91a27f9e.chunk.css",
+    "main.js": "/obsydia-fansite/static/js/main.3f2a5ab4.chunk.js",
+    "main.js.map": "/obsydia-fansite/static/js/main.3f2a5ab4.chunk.js.map",
+    "runtime-main.js": "/obsydia-fansite/static/js/runtime-main.67b6afff.js",
+    "runtime-main.js.map": "/obsydia-fansite/static/js/runtime-main.67b6afff.js.map",
+    "static/js/2.bf942283.chunk.js": "/obsydia-fansite/static/js/2.bf942283.chunk.js",
+    "static/js/2.bf942283.chunk.js.map": "/obsydia-fansite/static/js/2.bf942283.chunk.js.map",
+    "index.html": "/obsydia-fansite/index.html",
+    "static/css/main.91a27f9e.chunk.css.map": "/obsydia-fansite/static/css/main.91a27f9e.chunk.css.map",
+    "static/js/2.bf942283.chunk.js.LICENSE.txt": "/obsydia-fansite/static/js/2.bf942283.chunk.js.LICENSE.txt",
+    "static/media/Arrow-left.9c709f90.svg": "/obsydia-fansite/static/media/Arrow-left.9c709f90.svg",
+    "static/media/Arrow-right.77dbb872.svg": "/obsydia-fansite/static/media/Arrow-right.77dbb872.svg",
+    "static/media/Logo.fd46698c.svg": "/obsydia-fansite/static/media/Logo.fd46698c.svg",
+    "static/media/Petra_Gurin.1b025dfa.png": "/obsydia-fansite/static/media/Petra_Gurin.1b025dfa.png",
+    "static/media/Rosemi_Lovelock.b0f033a0.png": "/obsydia-fansite/static/media/Rosemi_Lovelock.b0f033a0.png",
+    "static/media/Selen_Tatsuki.e1064f72.png": "/obsydia-fansite/static/media/Selen_Tatsuki.e1064f72.png",
+    "static/media/index.css": "/obsydia-fansite/static/media/black-texture.504b480f.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.67b6afff.js",
+    "static/js/2.bf942283.chunk.js",
+    "static/css/main.91a27f9e.chunk.css",
+    "static/js/main.3f2a5ab4.chunk.js"
+  ]
+}
