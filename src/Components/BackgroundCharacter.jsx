@@ -1,6 +1,6 @@
 function BackgroundCharacter({ imgPath }) {
     return(
-        <img src={imgPath} alt=""  className="bg-char"></img> 
+        <img src={imgPath} alt=""  className="bgCharacter"></img> 
     )
 }
 

@@ -10,7 +10,9 @@ body{
   overflow: hidden;
 }
 
-.main-container{
+/*! Background section */
+
+.bgContainer{
   position: absolute;
   top: 0;
   left: 0;
@@ -21,9 +23,7 @@ body{
   z-index: -99;
 }
 
-/*! Background section */
-
-.bg-image{
+.bgImage{
   position: absolute;
   top: -25%;
   left: -25%;
@@ -35,7 +35,7 @@ body{
   filter: blur(20px);
 }
 
-.bg-char-container{
+.bgCharacterContainer{
   position: absolute;
   left: 0;
   top: 0;
@@ -48,41 +48,41 @@ body{
   max-height: 100vh;
 }
 
-.bg-char{
+.bgCharacter{
   max-height: 90vh;
   filter: grayscale() blur(8px);
   opacity: .2;
   transition: .4s ease-in-out;
 }
 
-.bg-char:nth-child(1){
+.bgCharacter:nth-child(1){
   padding-left: 20px;
 }
 
-.bg-char:nth-child(2){
+.bgCharacter:nth-child(2){
   margin-left: -20px;
 }
 
-.bg-char:nth-child(3){
+.bgCharacter:nth-child(3){
   padding-right: 70px;
 }
 
-.bg-char__active{
+.bgCharacter__active{
   filter: none;
   opacity: .7;
 }
 
-.bg-char:nth-child(1){
+.bgCharacter:nth-child(1){
   margin-left: 20px;
 }
-.bg-char:nth-child(3){
+.bgCharacter:nth-child(3){
   margin-right: 20px;
 }
 
 /*! Main Section */
 
 
-.main-menu-container{
+.mainMenuContainer{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -90,32 +90,32 @@ body{
   height: 100vh;
 }
 
-.main-logo{
+.obsydiaLogo{
   height: 450px;
   width: 450px;
   cursor: pointer;
   z-index: 3;
 } 
 
-.main-logo__active{
+.obsydiaLogo__active{
   pointer-events: none !important;
 }
 
-.arrow-left, .arrow-right{
+.arrowLeft, .arrowRight{
   transform: rotateY(180deg);
   transition: margin ease-in-out .3s,
               transform linear .1s;
 }
 
-.arrow-left{
+.arrowLeft{
   margin-right: 50px;
 }
 
-.arrow-right{
+.arrowRight{
   margin-left: 50px;
 }
 
-.char-box{
+.characterBox{
   position: absolute;
   opacity: 0;
   width: 312px;
@@ -125,14 +125,14 @@ body{
   z-index: 2;
 }
 
-.portrait-wrapper{
+.portraitWrapper{
   position: relative;
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
 
-.char-tooltip{
+.chararcterTooltip{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -149,7 +149,7 @@ body{
 
 
 /* Petra */
-.char-box:nth-child(2) div img{
+.characterBox:nth-child(2) div img{
   display: block;
   position: absolute;
   top: -280px;
@@ -157,7 +157,7 @@ body{
   transform: scale(0.9) rotate(-45deg)
 }
 
-.char-box:nth-child(2) div .char-tooltip{
+.characterBox:nth-child(2) div .chararcterTooltip{
   transform: rotate(-90deg);
   left: -62%;
   top: 40%;
@@ -165,12 +165,12 @@ body{
   background-color: #FEB043;
 }
 
-.char-box-petra__active{
+.characterBox-petra__active{
   left: -41% !important; 
 }
 
 /* Selen */
-.char-box:nth-child(3) div img{ 
+.characterBox:nth-child(3) div img{ 
   display: block;
   position: absolute;
   top: -200px;
@@ -178,7 +178,7 @@ body{
   transform: rotate(-45deg)
 }
 
-.char-box:nth-child(3) div .char-tooltip{
+.characterBox:nth-child(3) div .chararcterTooltip{
   transform: rotate(-45deg);
   top: -135px;
   left: -210px;
@@ -187,17 +187,17 @@ body{
   background-color: #A78FF2;
 }
 
-.char-box-selen__active{
+.characterBox-selen__active{
   top: -25px !important;
   left: -100px !important;
 }
 
-.char-box:nth-child(3) div .char-tooltip h1{
+.characterBox:nth-child(3) div .chararcterTooltip h1{
   align-self: flex-end;
 }
 
 /* Rosemi */
-.char-box:nth-child(4) div img{
+.characterBox:nth-child(4) div img{
   display: block;
   position: absolute;
   top: -340px;
@@ -205,39 +205,39 @@ body{
   transform: scale(0.9) rotate(-45deg);
 }
 
-.char-box:nth-child(4) div .char-tooltip{
+.characterBox:nth-child(4) div .chararcterTooltip{
   top: -20%;
   background-color: #F0BCC9;
 }
 
-.char-box-rosemi__active{
+.characterBox-rosemi__active{
   top: 0 !important;
 }
 
 
-#arrow-left__active{
-  animation: arrow-left-unfold 1.2s ease-in-out forwards;
+#arrowLeft__active{
+  animation: arrowLeft-unfold 1.2s ease-in-out forwards;
 }
 
-#arrow-right__active{
-  animation: arrow-right-unfold 1.2s ease-in-out forwards;
+#arrowRight__active{
+  animation: arrowRight-unfold 1.2s ease-in-out forwards;
 }
 
 #logo__active{
   animation: logo-unfold .2s ease-in-out .2s forwards;
 }
 
-#char-box-1__active{
+#characterBox-1__active{
   animation: unfold-1 .5s ease-in-out .5s forwards,
     lightup-1 .3s linear 1.3s forwards;
 }
 
-#char-box-2__active{
+#characterBox-2__active{
   animation: unfold-2 .5s ease-in-out .5s forwards,
     lightup-2 .3s linear 1.6s forwards;
 }
 
-#char-box-3__active{
+#characterBox-3__active{
   animation: unfold-3 .5s ease-in-out .5s forwards,
     lightup-3 .3s linear 1.9s forwards;
 }
@@ -274,7 +274,7 @@ body{
   }
 }
 
-@keyframes arrow-left-unfold {
+@keyframes arrowLeft-unfold {
   0%{
 
   }
@@ -295,7 +295,7 @@ body{
   }
 }
 
-@keyframes arrow-right-unfold {
+@keyframes arrowRight-unfold {
   35%{
     margin-left: 180px;
     transform: rotateY(0deg);
@@ -355,9 +355,10 @@ body{
 }
 
 
-/*!TODO Refactor tooltip to work via event listener to fix hover bug on Petra and Rosemi */
-/*!TODO Refactor naming conventions to better suite the current state of the development */
-/*!TODO Implement some sort of hover animation for the Obsydia logo before opening the menu */
+/** Refactor tooltip to work via event listener to fix hover bug on Petra and Rosemi */ 
+/** Refactor naming conventions, mainly css*/
+/*TODO Refactor and optimize character data transfer and rendering*/
+/*TODO Implement some sort of hover animation for the Obsydia logo before opening the menu */
 /*? Maybe implement a redirect to nijisanji web-site on the Obsydia logo + some kind of way to let user know about it(tooltip or animation idk) */
-/*!TODO Implement transition animation to info page of each talent */
-/*!TODO Implement info pages for each talent */
+/*TODO Implement transition animation to info page of each talent */
+/*TODO Implement info pages for each talent */

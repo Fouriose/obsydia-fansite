@@ -7,14 +7,14 @@ import rosemi from './media/Rosemi_Lovelock.png'
 function App() {
   return (
     <>
-    <div className='main-menu-container'>
+    <div className='mainMenuContainer'>
           <MainLogo petra={petra} selen={selen} rosemi={rosemi} />
       </div>
-    <div className="main-container">
+    <div className="bgContainer">
 
       
-      <div className='bg-image'></div>
-      <div className="bg-char-container">
+      <div className='bgImage'></div>
+      <div className="bgCharacterContainer">
         <BackgroundCharacter imgPath={petra}/>
         <BackgroundCharacter imgPath={selen}/>
         <BackgroundCharacter imgPath={rosemi}/>
