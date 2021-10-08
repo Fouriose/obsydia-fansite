@@ -120,7 +120,7 @@ body{
   opacity: 0;
   width: 312px;
   height: 312px;
-  border: 156px solid #c9c9c9;
+  border: 156px solid rgb(230, 230, 230);
   transform: rotate(45deg);
   z-index: 2;
   pointer-events: none;
