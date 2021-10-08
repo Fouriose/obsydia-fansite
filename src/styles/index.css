@@ -229,17 +229,17 @@ body{
 
 #char-box-1__active{
   animation: unfold-1 .5s ease-in-out .5s forwards,
-    lightup-1 .5s linear 1.5s forwards;
+    lightup-1 .3s linear 1.3s forwards;
 }
 
 #char-box-2__active{
   animation: unfold-2 .5s ease-in-out .5s forwards,
-    lightup-2 .5s linear 2s forwards;
+    lightup-2 .3s linear 1.6s forwards;
 }
 
 #char-box-3__active{
   animation: unfold-3 .5s ease-in-out .5s forwards,
-    lightup-3 .5s linear 2.5s forwards;
+    lightup-3 .3s linear 1.9s forwards;
 }
 
 
