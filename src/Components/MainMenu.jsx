@@ -12,15 +12,18 @@ function MainMenu(props){
         <img src={arrowLeft} id={menuIsActive ? 'arrowLeft__active' : undefined} alt='logo' className='arrowLeft'></img>
         <CharacterBox 
             character={props.petra}
-            state={menuIsActive ? 'characterBox-1__active' : undefined}
+            characterBoxState={menuIsActive ? 'characterBox-1__active' : undefined}
+            characterTooltipState={menuIsActive ? 'characterTooltip-1__active' : undefined}
         />
         <CharacterBox 
             character={props.selen}
-            state={menuIsActive ? 'characterBox-2__active' : undefined}
+            characterBoxState={menuIsActive ? 'characterBox-2__active' : undefined}
+            characterTooltipState={menuIsActive ? 'characterTooltip-2__active' : undefined}
         />
         <CharacterBox 
             character={props.rosemi}
-            state={menuIsActive ? 'characterBox-3__active' : undefined}
+            characterBoxState={menuIsActive ? 'characterBox-3__active' : undefined}
+            characterTooltipState={menuIsActive ? 'characterTooltip-3__active' : undefined}
         />
         
         <img src={logo} alt='logo'

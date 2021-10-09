@@ -4,7 +4,7 @@ function CharacterBox(props){
     let tooltipAnimation = `characterBox-${props.character.firstName.toLowerCase()}__active`
     
     return(
-        <div className={`characterBox characterBox-${props.character.firstName.toLowerCase()}}`} id={props.state} 
+        <div className={`characterBox characterBox-${props.character.firstName.toLowerCase()}}`} id={props.characterBoxState} 
         onMouseEnter={() => {
             bgImage.classList.add('bgCharacter__active')
             tooltip.classList.add(tooltipAnimation)
@@ -15,10 +15,13 @@ function CharacterBox(props){
             tooltip.classList.remove(tooltipAnimation)
         }}>
             <div className='portraitWrapper'>
-                <div className='chararcterTooltip'>
+                <div className='chararcterTooltip' id={props.characterTooltipState}>
                     <h1>{props.character.fullName}</h1>
                 </div>
-                <img src={props.character.image} className='characterBox-portrait' alt=''></img>
+                <div className='characterImageWrapper'>
+                    <img src={props.character.image} className='characterBox-portrait' alt=''></img>
+                </div>
+                
             </div>
             
         </div>
