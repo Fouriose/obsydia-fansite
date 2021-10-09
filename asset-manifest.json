@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/obsydia-fansite/static/css/main.91a27f9e.chunk.css",
-    "main.js": "/obsydia-fansite/static/js/main.3f2a5ab4.chunk.js",
-    "main.js.map": "/obsydia-fansite/static/js/main.3f2a5ab4.chunk.js.map",
+    "main.css": "/obsydia-fansite/static/css/main.4670d73d.chunk.css",
+    "main.js": "/obsydia-fansite/static/js/main.e655d422.chunk.js",
+    "main.js.map": "/obsydia-fansite/static/js/main.e655d422.chunk.js.map",
     "runtime-main.js": "/obsydia-fansite/static/js/runtime-main.67b6afff.js",
     "runtime-main.js.map": "/obsydia-fansite/static/js/runtime-main.67b6afff.js.map",
     "static/js/2.bf942283.chunk.js": "/obsydia-fansite/static/js/2.bf942283.chunk.js",
     "static/js/2.bf942283.chunk.js.map": "/obsydia-fansite/static/js/2.bf942283.chunk.js.map",
     "index.html": "/obsydia-fansite/index.html",
-    "static/css/main.91a27f9e.chunk.css.map": "/obsydia-fansite/static/css/main.91a27f9e.chunk.css.map",
+    "static/css/main.4670d73d.chunk.css.map": "/obsydia-fansite/static/css/main.4670d73d.chunk.css.map",
     "static/js/2.bf942283.chunk.js.LICENSE.txt": "/obsydia-fansite/static/js/2.bf942283.chunk.js.LICENSE.txt",
     "static/media/Arrow-left.9c709f90.svg": "/obsydia-fansite/static/media/Arrow-left.9c709f90.svg",
     "static/media/Arrow-right.77dbb872.svg": "/obsydia-fansite/static/media/Arrow-right.77dbb872.svg",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.67b6afff.js",
     "static/js/2.bf942283.chunk.js",
-    "static/css/main.91a27f9e.chunk.css",
-    "static/js/main.3f2a5ab4.chunk.js"
+    "static/css/main.4670d73d.chunk.css",
+    "static/js/main.e655d422.chunk.js"
   ]
 }
